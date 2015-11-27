@@ -1,21 +1,20 @@
 {
   "manifest_version": 2,
-  "name": "Broadcastify Screen Sharing",
+  "name": "Test Screen Sharing",
   "description": "Enables screen-sharing in Broadcastify",
   "version": "0.1",
   "content_security_policy": "default-src",
   "permissions": [
     "tabs",
     "desktopCapture",
-    "https://4295bcc1.ngrok.com/*",
-    "https://broadcast-with-respoke.herokuapp.com/*"
+    "https://84244476.ngrok.io/*",
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": true
   },
   "content_scripts": [{
-    "matches": ["https://4295bcc1.ngrok.com/*", "https://broadcast-with-respoke.herokuapp.com/*"],
+    "matches": ["https://84244476.ngrok.io/*"],
     "js": ["content.js"],
     "run_at": "document_end"
   }]
