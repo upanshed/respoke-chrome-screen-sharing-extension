@@ -7,7 +7,7 @@
   "permissions": [
     "tabs",
     "desktopCapture",
-    "https://84244476.ngrok.io/*",
+    "https://84244476.ngrok.io/*"
   ],
   "background": {
     "scripts": ["background.js"],
